@@ -10,8 +10,10 @@ body {
 .nav-container {
     display: flex;
     justify-content: center;
-    gap: 2vw;            /* Relative gap instead of fixed px */
-    padding: 0.8rem 1.3vw;   /* Padding adjusts with screen size */
+    gap: clamp(1rem, 2vw, 3rem);
+    padding: clamp(0.6rem, 1vw, 1rem) clamp(1vw, 5vw, 3rem);
+    /*gap: 2vw;            /* Relative gap instead of fixed px */
+    /*padding: 0.8rem 1.3vw;   /* Padding adjusts with screen size */
     border: 2px solid white;
     border-radius: 50px;
     width: fit-content;
@@ -21,15 +23,8 @@ body {
 .nav-link {
     color: white;
     text-decoration: none;
-    font-size: 1rem;      /* Relative font size */
-}
-
-@media screen and (max-width: 600px) {
-    .nav-container {
-        flex-direction: column; /* Stack links vertically on small screens */
-        gap: 1.5rem;
-        padding: 1rem 2rem;
-    }
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    /*font-size: 1rem;      /* Relative font size */
 }
 
 .nav-link:hover {
