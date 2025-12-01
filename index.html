@@ -3,15 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Ayush | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="nav-container">
-        <a href="blog/blog.html" class="nav-link">Blog</a>
-        <a href="creations/creations.html" class="nav-link">Creations</a>
-        <a href="about/about.html" class="nav-link">About</a>
-    </nav>
+    <div class="wip-banner">
+        🚧 This website is a work in progress. Some features may not be functional yet.
+    </div>
+
+    <div class="container">
+        <header class="row name-row">
+            <h1 class="name">Ayush Bhardwas</h1>
+        </header>
+
+        <nav class="row nav-row">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="blog/" class="nav-link">Blog</a>
+            <a href="creations/" class="nav-link">Creations</a>
+            <a href="connect/" class="nav-link">Connect</a>
+        </nav>
+
+        <section class="row intro-row">
+            <img src="profile.png" alt="Ayush" class="intro-photo">
+            <div class="intro-text">
+                <p class="intro-greeting">Hi!</p>
+                <p class="intro-body">I'm Ayush. I build game engines and tools. Currently a student at Breda University in the Netherlands. I enjoy bridging gaps in technology by studying the needs of developers and finding/architecting solutions that work.</p>
+            </div>
+        </section>
+    </div>
 
     <script src="script.js"></script>
 </body>

@@ -1,32 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-body {
+/* Reset and base styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #151515;
-    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
-.nav-container {
+body {
+    background-color: #0D0D0D;
+    color: #D9D9D9;
+    font-family: 'Aptos Serif', Georgia, serif;
+    line-height: 1.6;
+}
+
+/* Work in progress banner */
+.wip-banner {
+    background-color: #DBC4F0;
+    color: #0D0D0D;
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
+/* Center container - creates the empty bands on sides */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Row utility - use this for each section */
+.row {
+    padding: 24px 0;
+}
+
+/* Name row */
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+/* Nav row - horizontal lines above and below */
+.nav-row {
+    border-top: 2px solid #7F7F7F;
+    border-bottom: 2px solid #7F7F7F;
     display: flex;
-    justify-content: center;
-    gap: clamp(1rem, 2vw, 3rem);
-    padding: clamp(0.6rem, 1vw, 1rem) clamp(1vw, 5vw, 3rem);
-    /*gap: 2vw;            /* Relative gap instead of fixed px */
-    /*padding: 0.8rem 1.3vw;   /* Padding adjusts with screen size */
-    border: 2px solid white;
-    border-radius: 50px;
-    width: fit-content;
-    margin: 2vh auto 0 auto; /* Top margin relative to viewport */
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 4px 8px;
 }
 
 .nav-link {
-    color: white;
+    color: #7F7F7F;
     text-decoration: none;
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
-    /*font-size: 1rem;      /* Relative font size */
+    display: flex;
+    align-items: center;
 }
 
 .nav-link:hover {
-    color: #DBC4F0; /* Optional hover effect */
+    color: #DBC4F0;
+}
+
+.nav-link.active {
+    color: #DBC4F0;
+}
+
+/* Pipe delimiter after each link except the last */
+.nav-link::after {
+    content: '|';
+    margin: 0 16px;
+    color: #7F7F7F;
+}
+
+.nav-link:last-child::after {
+    content: none;
+}
+
+.nav-link.no-delimiter::after {
+    visibility: hidden;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .name {
+        text-align: center;
+    }
+
+    .intro-row {
+        flex-direction: column;
+    }
+
+    .intro-photo {
+        align-self: center;
+        margin-bottom: 16px;
+    }
+
+    .intro-text {
+        width: 100%;
+    }
+
+    .intro-body {
+        text-align: justify;
+    }
+}
+
+/* Intro section */
+.intro-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.intro-photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-greeting {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.intro-body {
+    font-size: 1.15rem;
+    line-height: 1.7;
 }
