@@ -13,22 +13,80 @@
 
     <div class="container">
         <header class="row name-row">
-            <h1 class="name">Ayush Bhardwas</h1>
+            <a href="index.html" class="name-link"><h1 class="name">Ayush Bhardwas</h1></a>
         </header>
 
         <nav class="row nav-row">
             <a href="index.html" class="nav-link active">Home</a>
-            <a href="blog/" class="nav-link">Blog</a>
-            <a href="creations/" class="nav-link">Creations</a>
-            <a href="connect/" class="nav-link">Connect</a>
+            <a href="blog/index.html" class="nav-link">Blog</a>
+            <a href="work/index.html" class="nav-link">Work</a>
+            <a href="connect/index.html" class="nav-link">Connect</a>
         </nav>
 
         <section class="row intro-row">
-            <img src="profile.png" alt="Ayush" class="intro-photo">
+            <img src="asset/profile.png" alt="Ayush" class="intro-photo">
             <div class="intro-text">
                 <p class="intro-greeting">Hi!</p>
                 <p class="intro-body">I'm Ayush. I build game engines and tools. Currently a student at Breda University in the Netherlands. I enjoy bridging gaps in technology by studying the needs of developers and finding/architecting solutions that work.</p>
             </div>
+        </section>
+
+        <section class="row section-block">
+
+            <div class="work-item">
+                <img src="work/project_name/asset/coming_soon.png" alt="A Project" class="work-thumb">
+                <div class="work-details">
+                    <a href="work/project_name/index.html" class="work-title-link"><h3 class="work-title">A Project</h3></a>
+                    <p class="work-description">Brief description of the project and its purpose.</p>
+                    <div class="work-tags">
+                        <span class="work-tag">#open-source</span>
+                        <span class="work-tag">#engine</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <img src="work/project_name/asset/coming_soon.png" alt="Another project" class="work-thumb">
+                <div class="work-details">
+                    <a href="work/project_name/index.html" class="work-title-link"><h3 class="work-title">Another Project</h3></a>
+                    <p class="work-description">Brief description of this project and its purpose.</p>
+                    <div class="work-tags">
+                        <span class="work-tag">#company</span>
+                        <span class="work-tag">#tools</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="work/index.html" class="section-link">See all my work →</a>
+        </section>
+
+        <section class="row section-block">
+
+            <article class="blog-entry">
+                <div class="blog-header">
+                    <a href="blog/post_name/index.html" class="blog-title">A Post</a>
+                    <span class="blog-date">Dec 1, 2025</span>
+                </div>
+                <p class="blog-excerpt">A peak into what I plan to share...</p>
+                <div class="blog-tags">
+                    <span class="blog-tag">#engine</span>
+                    <span class="blog-tag">#tools</span>
+                </div>
+            </article>
+
+            <article class="blog-entry">
+                <div class="blog-header">
+                    <a href="blog/post_name/index.html" class="blog-title">Another Post</a>
+                    <span class="blog-date">Nov 15, 2025</span>
+                </div>
+                <p class="blog-excerpt">A peak into what I plan to share...</p>
+                <div class="blog-tags">
+                    <span class="blog-tag">#engine</span>
+                    <span class="blog-tag">#ecs</span>
+                </div>
+            </article>
+
+            <a href="blog/index.html" class="section-link">Read more posts →</a>
         </section>
     </div>
 
