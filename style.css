@@ -587,6 +587,8 @@ body {
     font-size: 1rem;
     color: #D9D9D9;
     text-decoration: none;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 a.connect-value:hover {
