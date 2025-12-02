@@ -313,6 +313,14 @@ body {
     margin-bottom: 16px;
 }
 
+.work-thumb-link {
+    display: block;
+}
+
+.work-thumb-link:hover .work-thumb {
+    opacity: 0.8;
+}
+
 .work-title {
     font-size: 1.2rem;
     font-weight: 600;
